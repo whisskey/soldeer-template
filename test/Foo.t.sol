@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity >=0.8.26;
 
-import {Test, console} from "forge-std/Test.sol";
-import {Foo} from "../src/Foo.sol";
+import { Foo } from "../src/Foo.sol";
+import { Test, console } from "forge-std/Test.sol";
 
 contract FooTest is Test {
     Foo public foo;
@@ -14,9 +14,6 @@ contract FooTest is Test {
     function test_Bar() public view {
         string memory result = foo.bar();
         string memory expected = "Hello, World!";
-        assertEq(
-            keccak256(abi.encodePacked(result)),
-            keccak256(abi.encodePacked(expected))
-        );
+        assertEq(keccak256(abi.encodePacked(result)), keccak256(abi.encodePacked(expected)));
     }
 }
