@@ -26,6 +26,10 @@ jobs:
         with:
           version: nightly
 
+      - name: Run Soldeer Update
+        run: |
+          forge soldeer update
+
       - name: Run Forge build
         run: |
           forge fmt --check
@@ -45,6 +49,10 @@ jobs:
         uses: foundry-rs/foundry-toolchain@v1
         with:
           version: nightly
+
+      - name: Run Soldeer Update
+        run: |
+          forge soldeer update
 
       - name: Run Forge build
         run: |
@@ -66,6 +74,10 @@ jobs:
         uses: foundry-rs/foundry-toolchain@v1
         with:
           version: nightly
+
+      - name: Run Soldeer Update
+        run: |
+          forge soldeer update
 
       - name: Run Forge tests
         run: |
