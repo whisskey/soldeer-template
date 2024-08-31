@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.8.26 <0.9.0;
 
-import { Script } from "forge-std/Script.sol";
+import { Script } from "forge-std/src/Script.sol";
 
 abstract contract Broadcaster is Script {
     /// @dev Private key of broadcaster who deals with the transaction.
