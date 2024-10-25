@@ -4,7 +4,7 @@
   solady = { version = "0.0.221" }
 
 [soldeer]
- remappings_generated = false
+ remappings_generate = false
  remappings_regenerate = false
  remappings_version = false
  remappings_prefix = ""
@@ -21,7 +21,7 @@
   optimizer_runs = 1000
   out = "out"
   script = "script"
-  solc = "0.8.26"
+  solc = "0.8.27"
   src = "src"
   test = "test"
 
